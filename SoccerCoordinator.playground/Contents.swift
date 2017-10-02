@@ -4,7 +4,7 @@
 
 // --++-->> players collated into an array
 
-let soccerPlayers: [[String: Any]] = [
+let players: [[String: Any]] = [
     ["Name": "Joe Smith", "Height": 42, "Soccer Experience": true, "Guardian Name": "Jill and Jan Smith"],
     ["Name": "Jill Tanner", "Height": 36, "Soccer Experience": true, "Guardian Name": "Clara Tanner"],
     ["Name": "Bill Bon", "Height": 43, "Soccer Experience": true, "Guardian Name": "Sara and Jenny Bon"],
@@ -53,7 +53,7 @@ var raptorsInexpCount: Int = 0
 
 // --++-->> splitting up experienced and inexperienced players
 
-for player in soccerPlayers {
+for player in players {
     if player["Soccer Experience"] as! Bool == true {
         experiencedPlayers.append(player)
         masterExpCount += 1
